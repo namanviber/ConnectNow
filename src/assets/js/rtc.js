@@ -384,6 +384,7 @@ window.addEventListener('load', () => {
                 e.target.classList.add('fa-video-slash');
                 elem.setAttribute('title', 'Show Video');
 
+        
                 myStream.getVideoTracks()[0].enabled = false;
             }
 

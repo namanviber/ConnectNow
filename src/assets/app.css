@@ -16,6 +16,14 @@ body {
     background-color: #ececec;
 }
 
+.card {
+    background-color: #ececec;
+    border: 2px solid;
+    max-height: 62vh;
+    width: 100%;
+    left: 30px;
+}
+
 .chat-col.chat-opened {
     right: 0;
     overflow-y: auto;
@@ -67,7 +75,7 @@ body {
 .remote-video {
     width: 100%;
     height: auto;
-    max-height: 90vh;
+    max-height: 100%;
 }
 
 .remote-video-controls {
@@ -87,10 +95,12 @@ body {
 } */
 
 .local-video {
-    bottom: 50px;
-    left: 20px;
+    bottom: 10px;
+    left: 30px;
     position: fixed;
-    width: 20vw;
+    width: 25vh;
+    border-radius: 10px;
+    border: #000 2px solid;
 }
 
 .mirror-mode {
@@ -139,7 +149,7 @@ body {
     cursor: pointer;
 }
 
-.record-option {
+.record-option{
     height: 200px;
     border-radius: 10%;
     border: 1px solid #17a2b8;
@@ -148,16 +158,18 @@ body {
     vertical-align: middle;
 }
 
+
 .custom-modal {
     display: none;
-    /* position: fixed; */
+    position: fixed;
     z-index: 10000;
-    left: 20em;
+    left: 0;
     top: 0;
-    width: 50%;
+    width: 100%;
     height: 100%;
     overflow: auto;
 }
+
 
 .custom-modal-content {
     background-color: #fefefe;
@@ -220,16 +232,6 @@ body {
 
 /* UI */
 
-#navbarbot {
-    margin-left: 35em !important;
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    padding-top: 64px;
-    max-width: 600px;
-    background-color: transparent !important;
-}
-
 #new-nav i {
     display: flex !important;
     justify-content: center !important;
@@ -237,7 +239,7 @@ body {
     background-repeat: no-repeat;
     background-size: 24px;
     border: none;
-    height: 35px;
+    height: 40px;
     /* margin: 0 8px; */
     box-shadow: 0 2px 6px 0 rgba(136, 148, 171, 0.2),
         0 24px 20px -24px rgba(71, 82, 107, 0.1);
@@ -246,7 +248,7 @@ body {
     cursor: pointer;
     outline: none;
     background-color: #fff !important;
-    font-size: 25px !important;
+    font-size: 30px !important;
     color: #000 !important;
 }
 
@@ -322,17 +324,14 @@ body {
     color: #a2a4bc !important;
 }
 
-/* #chat-pane form textarea {
-                            background-color: #eaebf5 !important;
-                        } */
 
 #send-button {
     color: #fff !important;
     background-color: #3d42df !important;
     border-radius: 8px;
     border: none;
-    width: 50px;
-    height: 40px;
+    width: 60px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;

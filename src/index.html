@@ -52,12 +52,12 @@
     </div>
 
     <!-- Unique Identifier (Connecting Diffrent Persons) -->
-    <span class="text-white mr-5">
+    <div style="color: transparent !important;">
         Unique Identifier: <span id='randomNumber'></span>
-    </span>
+    </div>
 
     <!-- Navbar -->
-    <nav class="navbar fixed-bottom bg-info rounded-0 d-print-none" id="navbarbot">
+    <nav class="navbar fixed-bottom rounded-0 d-print-none justify-content-center">
 
         <div class="pull-right room-comm" id="new-nav" hidden>
 
@@ -179,11 +179,9 @@
 
                 <form>
                     <div class="input-group mb-3" id="typing-area">
-                        <textarea id="chat-input" class="form-control rounded-0 chat-box border-info" rows='1'
-                            placeholder="Type here..."></textarea>
+                        <textarea  id="chat-input" class="form-control rounded-0 chat-box border-info" rows='3' placeholder="Type here..."></textarea>
                         <div class="input-group-append" id='chat-input-btn'>
-                            <button type="button" class="btn btn-dark rounded-5 border-info btn-no-effect"
-                                id="send-button">Send</button>
+                            <button type="button" class="btn btn-dark rounded-5 border-info btn-no-effect" id="send-button">Send</button>
                         </div>
                     </div>
                 </form>
