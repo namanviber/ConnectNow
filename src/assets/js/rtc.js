@@ -129,7 +129,7 @@ window.addEventListener('load', () => {
         }
 
 
-
+        // Create offers and for web rtc connection
         function init(createOffer, partnerName) {
             pc[partnerName] = new RTCPeerConnection(h.getIceServer());
 
@@ -245,7 +245,7 @@ window.addEventListener('load', () => {
         }
 
 
-
+        // Start Screen Share
         function shareScreen() {
             h.shareScreen().then((stream) => {
                 h.toggleShareIcons(true);
@@ -270,7 +270,7 @@ window.addEventListener('load', () => {
         }
 
 
-
+        // Stop Screen Sharing
         function stopSharingScreen() {
             //enable video toggle btn
             h.toggleVideoBtnDisabled(false);
@@ -303,7 +303,7 @@ window.addEventListener('load', () => {
             }
         }
 
-
+        // Toggle between start recording and stop recording
         function toggleRecordingIcons(isRecording) {
             let e = document.getElementById('record');
 
@@ -320,7 +320,7 @@ window.addEventListener('load', () => {
             }
         }
 
-
+        // Start Recording Function
         function startRecording(stream) {
             mediaRecorder = new MediaRecorder(stream, {
                 mimeType: 'video/webm;codecs=vp9'

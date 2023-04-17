@@ -89,10 +89,10 @@ body {
     visibility: hidden;
 }
 
-/* .remote-video:hover+.remote-video-controls,
+.remote-video:hover+.remote-video-controls,
 .remote-video-controls:hover {
     visibility: visible;
-} */
+}
 
 .local-video {
     bottom: 10px;
